@@ -1,0 +1,63 @@
+.team .slide {
+    text-align: center;
+}
+
+.team .team-container {
+    margin-top: 4rem;
+}
+
+.team .slide .image {
+    position: relative;
+    overflow: hidden;
+}
+
+.team .slide .image img {
+    width: 100%;
+    height: auto;
+}
+
+.team .slide .image .social-icons {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10rem;
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: bottom 0.3s ease;
+}
+
+.team .slide:hover .image .social-icons {
+    bottom: 0;
+}
+
+.team .slide .image .social-icons a {
+    color: var(--white);
+    font-size: 3rem;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+    &:hover {
+        color: var(--secondary);
+    }
+}
+
+.team .slide .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.team .slide .content h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.team .slide .content h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--light-color);
+    text-transform: capitalize;
+}

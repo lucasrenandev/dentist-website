@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+:root {
+  --primary: #1f2e88;
+  --secondary: #2f66d4;
+  --hover: #a2d9f5;
+  --black: #333;
+  --white: #fff;
+  --light-color: #666;
+  --light-bg: #eee;
+  --border: 0.2rem solid rgba(0, 0, 0, 0.1)
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) ;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+section {
+  width: 100%;
+  padding: 5rem 5%;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.8rem 2.5rem;
+  background-color: var(--primary);
+  color: var(--white);
+  font-size: 1.7rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: var(--secondary);
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 5%;
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+}
+#header .btn {
+  margin-top: 0;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: var(--black);
+  font-weight: 700;
+}
+
+.logo i {
+  margin-right: 1rem;
+  color: var(--primary);
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list li {
+  margin: 0 1rem;
+}
+
+.nav-list li a {
+  color: var(--black);
+  font-size: 1.7rem;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+.nav-list li a:hover {
+  color: var(--primary);
+}
+
+#menu-icon {
+  font-size: 2.5rem;
+  color: var(--black);
+  z-index: 1010;
+  cursor: pointer;
+  display: none;
+}
+#menu-icon:hover {
+  color: var(--primary);
+}
+
+.home {
+  min-height: 100vh;
+  background-image: url("../images/home.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.home .content {
+  max-width: 60rem;
+  padding: 10rem 0 0 2rem;
+}
+
+.home .content h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.home .content p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--light-color);
+  line-height: 2;
+  max-width: 45rem;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+}
+
+.about-text h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2;
+  color: var(--light-color);
+}
+
+.services {
+  background-color: var(--light-bg);
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.services-box {
+  background-color: var(--white);
+  padding: 5rem 3.5rem;
+  border-radius: 5rem;
+  box-shadow: var(--box-shadow);
+}
+
+.services-box img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.services-box h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.services-box p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--light-color);
+  line-height: 2;
+}
+
+.team .slide {
+  text-align: center;
+}
+
+.team .team-container {
+  margin-top: 4rem;
+}
+
+.team .slide .image {
+  position: relative;
+  overflow: hidden;
+}
+
+.team .slide .image img {
+  width: 100%;
+  height: auto;
+}
+
+.team .slide .image .social-icons {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10rem;
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: bottom 0.3s ease;
+}
+
+.team .slide:hover .image .social-icons {
+  bottom: 0;
+}
+
+.team .slide .image .social-icons a {
+  color: var(--white);
+  font-size: 3rem;
+  margin: 0 1rem;
+  transition: color 0.3s ease;
+}
+.team .slide .image .social-icons a:hover {
+  color: var(--secondary);
+}
+
+.team .slide .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.team .slide .content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.team .slide .content h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--light-color);
+  text-transform: capitalize;
+}
+
+.pricing {
+  background-color: var(--light-bg);
+}
+
+.pricing-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.pricing-box {
+  background-color: var(--white);
+  width: 30rem;
+  height: 46rem;
+  margin: 2rem 3rem;
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow);
+  padding: 3rem 0;
+}
+
+.pricing-box h4 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.pricing-box .price {
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.pricing-box .price .currency {
+  font-size: 4rem;
+  font-weight: 300;
+  color: var(--primary);
+  padding-top: 1rem;
+}
+
+.pricing-box .price .value {
+  font-size: 5.8rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.pricing-box .price .year {
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: var(--primary);
+  padding-top: 2.5rem;
+}
+
+.pricing-box .content {
+  padding: 3rem 0 0 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.pricing-box .content p {
+  margin-bottom: 2rem;
+  padding: 0 1rem 0 1rem;
+  color: var(--light-color);
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.pricing-box .content p i {
+  margin-right: 1.3rem;
+  color: var(--secondary);
+}
+
+.pricing-box.active {
+  background-color: var(--hover);
+}/*# sourceMappingURL=main.css.map */

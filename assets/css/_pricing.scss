@@ -1,0 +1,82 @@
+.pricing {
+    background-color: var(--light-bg);
+}
+
+.pricing-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.pricing-box {
+    background-color: var(--white);
+    width: 30rem;
+    height: 46rem;
+    margin: 2rem 3rem;
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+    padding: 3rem 0;
+}
+
+.pricing-box h4 {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.pricing-box .price {
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+.pricing-box .price .currency {
+    font-size: 4rem;
+    font-weight: 300;
+    color: var(--primary);
+    padding-top: 1rem;
+}
+
+.pricing-box .price .value {
+    font-size: 5.8rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.pricing-box .price .year {
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: var(--primary);
+    padding-top: 2.5rem;
+}
+
+.pricing-box .content {
+    padding: 3rem 0 0 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.pricing-box .content p {
+    margin-bottom: 2rem;
+    padding: 0 1rem 0 1rem;
+    color: var(--light-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.pricing-box .content p i {
+    margin-right: 1.3rem;
+    color: var(--secondary);
+}
+
+.pricing-box.active {
+    background-color: var(--hover);
+}

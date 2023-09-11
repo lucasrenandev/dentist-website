@@ -1,0 +1,11 @@
+@mixin variables() {
+    --primary: #1f2e88;
+    --secondary: #2f66d4;
+    --hover: #a2d9f5;
+    --black: #333;
+    --white: #fff;
+    --light-color: #666;
+    --light-bg: #eee;
+    --border: 0.2rem solid rgba(0, 0, 0, 0.1)
+    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1)
+}

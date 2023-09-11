@@ -1,0 +1,39 @@
+.services {
+    background-color: var(--light-bg);
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.services-box {
+    background-color: var(--white);
+    padding: 5rem 3.5rem;
+    border-radius: 5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.services-box img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.services-box h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.services-box p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--light-color);
+    line-height: 2;
+}

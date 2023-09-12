@@ -1,14 +1,18 @@
+/* ===== Services section ===== */
 .services {
     background-color: var(--light-bg);
 }
 
 .services-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     align-items: center;
     text-align: center;
     gap: 2rem;
     margin-top: 4rem;
+    @media (max-width: 400px) {
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    }
 }
 
 .services-box {

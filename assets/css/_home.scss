@@ -1,3 +1,4 @@
+/* ===== Home section ===== */
 .home {
     min-height: 100vh;
     background-image: url("../images/home.jpg");
@@ -7,11 +8,17 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    @media (max-width: 768px) {
+        background-position: left;
+    }
 }
 
 .home .content {
     max-width: 60rem;
     padding: 10rem 0 0 2rem;
+    @media (max-width: 768px) {
+        padding: 10rem 0 0 0;
+    }
 }
 
 .home .content h1 {
@@ -20,6 +27,12 @@
     text-transform: capitalize;
     line-height: 1.2;
     margin-bottom: 1rem;
+    @media (max-width: 991px) {
+        font-size: 5rem;
+    }
+    @media (max-width: 768px) {
+        font-size: 4rem;
+    }
 }
 
 .home .content p {
